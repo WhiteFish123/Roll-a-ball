@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
         Vector3 moveDir=new Vector3(horizontal,0,vertical).normalized;
 
         Vector3 targetVelocity=moveDir*moveSpeed;
-        rb.velocity=targetVelocity;
+        rb.linearVelocity=targetVelocity;
         // Vector3 moveDir=new Vector3(horizontal,0,vertical);
 
         // rb.AddForce(moveDir*forceVal);
